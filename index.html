@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Da Ida — B&amp;B nel centro storico di Bosa</title>
+<meta name="description" content="Da Ida, due camere colorate in Vico Tendas 3, nel quartiere di Sa Costa a Bosa, Sardegna. Ospitalità di Anna, animali benvenuti.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bar" id="bar">
+  <a class="mark" href="#top">Da Ida <span>Bosa</span></a>
+  <a class="btn btn-small" href="#prenota">Prenota</a>
+  <button class="dots" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Apri il menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<nav class="menu" id="menu" aria-label="Menu" hidden>
+  <ul>
+    <li><a href="#bosa">Bosa</a></li>
+    <li><a href="#camere">Le camere</a></li>
+    <li><a href="#casa">La casa</a></li>
+    <li><a href="#dintorni">Dintorni</a></li>
+    <li><a href="#prenota">Prenota</a></li>
+  </ul>
+  <p>Vico Tendas 3, Bosa · Check-in 15–22</p>
+</nav>
+
+<main id="top">
+  <section class="hero" id="hero">
+    <div class="hero-stage">
+      <canvas id="gl" aria-hidden="true"></canvas>
+      <img class="hero-poster" src="media/vico-start.jpg" alt="Un vicolo di Sa Costa a Bosa: case pastello, vasi di gerani e un gatto sull'uscio">
+      <div class="hero-copy">
+        <h1>Da Ida, a Bosa</h1>
+        <p class="lede">Due camere colorate in un vicolo di Sa Costa, sotto il castello Malaspina.</p>
+        <a class="btn" href="#prenota">Scegli le date</a>
+      </div>
+      <p class="chapter" data-at="0.3">Sa Costa, il quartiere che sale al castello</p>
+      <p class="chapter" data-at="0.6">Gerani, persiane, il gatto sull'uscio</p>
+      <p class="chapter chapter-end" data-at="0.86">Vico Tendas, 3. <em>Benvenuti.</em></p>
+      <div class="progress" aria-hidden="true"><span id="prog"></span></div>
+    </div>
+  </section>
+
+  <section class="bosa" id="bosa">
+    <div class="bosa-text">
+      <h2 class="reveal">Una città dipinta sul fiume</h2>
+      <p class="reveal">Bosa scende dal castello Malaspina fino al Temo, l'unico fiume navigabile della Sardegna. Le case di Sa Costa sono rosa, ocra, celesti: Da Ida è una di loro, in un vicolo pedonale dove la sera si sentono solo i passi.</p>
+      <p class="reveal">Il centro è a trecento metri, la spiaggia di Bosa Marina a due chilometri e mezzo.</p>
+    </div>
+    <figure class="bosa-pic reveal">
+      <img src="img/p3.jpg" alt="Bosa vista dal Temo: case colorate, il ponte vecchio e il castello Malaspina" loading="lazy">
+    </figure>
+    <figure class="bosa-door reveal">
+      <img src="img/n2.jpg" alt="La facciata di Da Ida con vasi di ceramica ed edera appesi al muro" loading="lazy">
+    </figure>
+  </section>
+
+  <section class="rooms" id="camere">
+    <h2 class="reveal">Due camere, due colori</h2>
+    <article class="room room-green">
+      <div class="room-pics">
+        <img class="reveal" src="img/room-corallo.jpg" alt="Camera con parete corallo, armadio bianco dipinto e letto matrimoniale" loading="lazy">
+      </div>
+      <div class="room-text">
+        <h3 class="reveal">Camera Corallo</h3>
+        <p class="reveal">Una parete arancio corallo, l'armadio bianco dipinto a mano, il letto matrimoniale con la coperta di Sardegna. Bagno con piastrelle verde acqua, bollitore e frigorifero in camera.</p>
+        <dl class="reveal">
+          <div><dt>Ospiti</dt><dd>fino a 3</dd></div>
+          <div><dt>Bagno</dt><dd>privato, doccia</dd></div>
+          <div><dt>Da</dt><dd>75 € a notte</dd></div>
+        </dl>
+      </div>
+    </article>
+    <article class="room room-violet">
+      <div class="room-text">
+        <h3 class="reveal">Camera Lavanda</h3>
+        <p class="reveal">Un muro lilla, la testiera ricamata a filet di Bosa, la trapunta orlata di pizzo. Zanzariere alle finestre e cotto fresco sotto i piedi nelle notti d'estate.</p>
+        <dl class="reveal">
+          <div><dt>Ospiti</dt><dd>fino a 3</dd></div>
+          <div><dt>Bagno</dt><dd>piastrelle blu</dd></div>
+          <div><dt>Da</dt><dd>70 € a notte</dd></div>
+        </dl>
+      </div>
+      <div class="room-pics two">
+        <img class="reveal" src="img/room-lavanda.jpg" alt="Camera con parete lilla e testiera ricamata a filet" loading="lazy">
+        <img class="reveal" src="img/n3.jpg" alt="Letto con trapunta rosa bordata di pizzo e asciugamani piegati" loading="lazy">
+      </div>
+    </article>
+  </section>
+
+  <section class="casa" id="casa">
+    <h2 class="reveal">Una porta fra i gerani</h2>
+    <div class="casa-grid">
+      <figure class="c1 reveal"><div class="ph"><img src="img/p5.jpg" alt="L'ingresso di Da Ida in Vico Tendas, con vasi di fiori sui gradini" loading="lazy"></div><figcaption>L'ingresso in Vico Tendas 3.</figcaption></figure>
+      <figure class="c2 reveal"><div class="ph"><img src="img/p7.jpg" alt="Camera con parete lilla e armadio bianco dipinto" loading="lazy"></div><figcaption>La Lavanda, con l'armadio dipinto.</figcaption></figure>
+      <figure class="c3 reveal"><div class="ph"><img src="img/p8.jpg" alt="Il gatto di casa davanti alla facciata rosa" loading="lazy"></div><figcaption>Il custode del vicolo.</figcaption></figure>
+      <div class="c4 reveal">
+        <p>Anna ti aspetta dalle 15 alle 22, ti consegna le chiavi e ti dice dove mangiare stasera. Parla italiano, inglese e francese.</p>
+        <p class="score"><strong>9,4</strong> su 10 da oltre 380 ospiti su Booking.com</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="around" id="dintorni">
+    <h2 class="reveal">Tutto a piedi, il mare vicino</h2>
+    <ul class="dist">
+      <li class="reveal"><span>Sardinian Gallery</span><b>2 min</b></li>
+      <li class="reveal"><span>Borgo Sant'Ignazio</span><b>80 m</b></li>
+      <li class="reveal"><span>Centro di Bosa</span><b>300 m</b></li>
+      <li class="reveal"><span>Cala 'e Moro</span><b>2,4 km</b></li>
+      <li class="reveal"><span>Bosa Marina</span><b>2,6 km</b></li>
+      <li class="reveal"><span>Spiaggia di Turas</span><b>3,7 km</b></li>
+      <li class="reveal"><span>Aeroporto di Alghero</span><b>53 km</b></li>
+    </ul>
+  </section>
+
+  <section class="book" id="prenota">
+    <div class="book-head">
+      <h2 class="reveal">Prenota il tuo soggiorno</h2>
+      <p class="reveal">Prezzo diretto, senza commissioni. Cancellazione gratuita fino a 7 giorni prima.</p>
+    </div>
+
+    <form class="flow" id="flow" novalidate>
+      <fieldset data-step="1" class="search reveal">
+        <legend class="sr">Date e camera</legend>
+        <div class="row">
+          <label>Arrivo<input type="date" name="in" required></label>
+          <label>Partenza<input type="date" name="out" required></label>
+        </div>
+        <div class="pick" role="radiogroup" aria-label="Camera">
+          <label class="opt"><input type="radio" name="room" value="corallo" checked><img src="img/room-corallo.jpg" alt=""><span><b>Corallo</b>75 € / notte</span></label>
+          <label class="opt"><input type="radio" name="room" value="lavanda"><img src="img/room-lavanda.jpg" alt=""><span><b>Lavanda</b>70 € / notte</span></label>
+        </div>
+        <div class="row">
+          <label>Ospiti
+            <span class="stepper"><button type="button" data-d="-1" aria-label="Meno ospiti">−</button><output name="guests">2</output><button type="button" data-d="1" aria-label="Più ospiti">+</button></span>
+          </label>
+          <label class="check"><input type="checkbox" name="pet"> Viaggio con un animale <small>+10 €</small></label>
+        </div>
+        <div class="go">
+          <p class="live" id="live" aria-live="polite">Scegli le date per vedere il prezzo</p>
+          <button class="btn" type="button" data-next>Prenota</button>
+        </div>
+        <p class="err" role="alert"></p>
+      </fieldset>
+
+      <dialog class="checkout" id="checkout" aria-labelledby="coTitle">
+        <div class="co-top">
+          <h3 id="coTitle">Completa la prenotazione</h3>
+          <button class="x" type="button" data-close aria-label="Chiudi">×</button>
+        </div>
+        <ol class="steps" aria-label="Passaggi">
+          <li class="ok">Date</li><li class="on">I tuoi dati</li><li>Pagamento</li>
+        </ol>
+        <div class="co-body">
+          <div class="co-main">
+            <fieldset data-step="2">
+              <legend class="sr">I tuoi dati</legend>
+              <div class="row">
+                <label>Nome e cognome<input name="name" autocomplete="name" required></label>
+                <label>Email<input type="email" name="email" autocomplete="email" required></label>
+              </div>
+              <div class="row">
+                <label>Telefono<input type="tel" name="tel" autocomplete="tel" required></label>
+                <label>Orario di arrivo
+                  <select name="eta"><option>15:00–17:00</option><option>17:00–19:00</option><option>19:00–22:00</option></select>
+                </label>
+              </div>
+              <label>Una nota per Anna <textarea name="note" rows="3" placeholder="Allergie, culla, consigli per la cena…"></textarea></label>
+              <p class="err" role="alert"></p>
+              <div class="nav"><button class="link" type="button" data-close>Modifica le date</button><button class="btn" type="button" data-next>Vai al pagamento</button></div>
+            </fieldset>
+
+            <fieldset data-step="3" hidden>
+              <legend class="sr">Pagamento</legend>
+              <div class="card" aria-hidden="true">
+                <span class="card-brand" id="cardBrand">Carta</span>
+                <span class="card-num" id="cardShow">•••• •••• •••• ••••</span>
+                <span class="card-name" id="nameShow">Nome sulla carta</span>
+                <span class="card-exp" id="expShow">MM/AA</span>
+              </div>
+              <label>Numero carta<input name="cc" inputmode="numeric" autocomplete="off" placeholder="4242 4242 4242 4242" maxlength="19" required></label>
+              <div class="row">
+                <label>Scadenza<input name="exp" inputmode="numeric" autocomplete="off" placeholder="MM/AA" maxlength="5" required></label>
+                <label>CVC<input name="cvc" inputmode="numeric" autocomplete="off" placeholder="123" maxlength="4" required></label>
+              </div>
+              <p class="demo">Demo: nessun addebito reale. Carta di prova 4242 4242 4242 4242.</p>
+              <p class="err" role="alert"></p>
+              <div class="nav"><button class="link" type="button" data-back>Indietro</button><button class="btn" type="submit" id="payBtn">Paga</button></div>
+            </fieldset>
+
+            <div class="done" data-step="4" hidden>
+              <h3>Prenotazione confermata</h3>
+              <p id="doneText"></p>
+              <p class="code">Codice <b id="code"></b></p>
+              <button class="btn" type="button" data-close>Torna al sito</button>
+            </div>
+          </div>
+
+          <aside class="summary" aria-live="polite">
+            <img id="sumImg" src="img/room-corallo.jpg" alt="">
+            <h3 id="sumRoom">Camera Corallo</h3>
+            <p id="sumDates"></p>
+            <dl id="sumLines"></dl>
+            <p class="total"><span>Totale</span><b id="sumTotal">—</b></p>
+          </aside>
+        </div>
+      </dialog>
+    </form>
+  </section>
+</main>
+
+<footer class="foot">
+  <p class="foot-name">Da Ida</p>
+  <div class="foot-row">
+    <p>Vico Tendas 3, Bosa (OR), Sardegna</p>
+    <p>Check-in 15–22 · Check-out entro le 10</p>
+    <p>Foto: Da Ida · Video del vicolo generato con AI</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
+<script type="module" src="main.js"></script>
+</body>
+</html>
